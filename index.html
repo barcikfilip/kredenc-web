@@ -1,1 +1,470 @@
-<!DOCTYPE html>\n<html lang="sk">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <title>Kredenc Levice - Moderné Slovenské Nábytkárstvo</title>\n    <link rel="stylesheet" href="styles.css">\n</head>\n<body>\n    <!-- Hero Section -->\n    <header class="hero">\n        <h1>Vítajte v Kredenc Levice</h1>\n        <p>Moderný slovenský nábytok pre váš domov.</p>\n        <a href="#services" class="btn">Naše Služby</a>\n        <a href="#contact" class="btn">Kontaktujte Nás</a>\n    </header>\n\n    <!-- About Section -->\n    <section id="about">\n        <h2>O Nás</h2>\n        <p>Sme rodinná firma so zameraním na moderný dizajn a kvalitné spracovanie.</p>\n    </section>\n\n    <!-- Services Section -->\n    <section id="services">\n        <h2>Naše Služby</h2>\n        <div class="service-card">\n            <h3>Návrh Interiérov</h3>\n            <p>Vytvoríme pre vás unikátne interiéry.</p>\n        </div>\n        <div class="service-card">\n            <h3>Zákazková Výroba</h3>\n            <p>Vyrobíme nábytok presne podľa vašich predstáv.</p>\n        </div>\n    </section>\n\n    <!-- Gallery Section -->\n    <section id="gallery">\n        <h2>Naša Galéria</h2>\n        <div class="gallery-item">Nábytok 1</div>\n        <div class="gallery-item">Nábytok 2</div>\n        <div class="gallery-item">Nábytok 3</div>\n    </section>\n\n    <!-- Why Choose Us Section -->\n    <section id="why-choose-us">\n        <h2>Prečo Si Vybrať Nás?</h2>\n        <ul>\n            <li>Vysoká kvalita produktov</li>\n            <li>Individuálny prístup k zákazníkom</li>\n            <li>Rýchla dodacia lehota</li>\n        </ul>\n    </section>\n\n    <!-- Contact Form Section -->\n    <section id="contact">\n        <h2>Kontaktujte Nás</h2>\n        <form>\n            <label for="name">Meno:</label>\n            <input type="text" id="name" name="name" required>\n            <label for="email">Email:</label>\n            <input type="email" id="email" name="email" required>\n            <button type="submit">Odoslať</button>\n        </form>\n    </section>\n\n    <footer>\n        <p>&copy; 2026 Kredenc Levice</p>\n    </footer>\n</body>\n</html>\n
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kredenc Levice – zákazková výroba nábytku a návrh interiérov v Leviciach. Kvalita, dizajn a individualita.">
+    <title>Kredenc Levice – Nábytok &amp; Interiér</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-icon">&#x2669;</span>
+                Kredenc <span>Levice</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" class="nav-link">O nás</a></li>
+                <li><a href="#services" class="nav-link">Služby</a></li>
+                <li><a href="#gallery" class="nav-link">Galéria</a></li>
+                <li><a href="#why-us" class="nav-link">Prečo my?</a></li>
+                <li><a href="#contact" class="nav-link nav-cta">Kontakt</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Otvoriť menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-tagline">Zákazková výroba nábytku &amp; návrh interiérov</p>
+            <h1 class="hero-title">Váš domov,<br><span>naša vášeň</span></h1>
+            <p class="hero-subtitle">Tvoríme priestory, ktoré rozprávajú váš príbeh. Každý kus nábytku je unikát vytvorený s láskou a precíznosťou.</p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn btn-primary">Naše Služby</a>
+                <a href="#contact" class="btn btn-outline">Kontaktujte Nás</a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <a href="#about" aria-label="Scrollovať nižšie">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="stats-bar">
+        <div class="stats-container">
+            <div class="stat-item">
+                <span class="stat-number" data-target="15">0</span><span class="stat-suffix">+</span>
+                <span class="stat-label">Rokov skúseností</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="500">0</span><span class="stat-suffix">+</span>
+                <span class="stat-label">Spokojných zákazníkov</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="1200">0</span><span class="stat-suffix">+</span>
+                <span class="stat-label">Realizovaných projektov</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="100">0</span><span class="stat-suffix">%</span>
+                <span class="stat-label">Spokojnosť zákazníkov</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-visual">
+                    <div class="about-image-block">
+                        <div class="about-shape shape-1"></div>
+                        <div class="about-shape shape-2"></div>
+                        <div class="about-badge">
+                            <i class="fas fa-award"></i>
+                            <span>Prémiová kvalita</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p class="section-label">O nás</p>
+                    <h2 class="section-title">Rodinná tradícia<br>moderného dizajnu</h2>
+                    <p class="about-desc">Sme rodinná firma z Levíc so silnou vášňou pre krásu dreveného nábytku a funkčné interiéry. Každý projekt berieme ako výzvu vytvoriť niečo výnimočné – priestor, v ktorom sa budete cítiť doma.</p>
+                    <p class="about-desc">Spájame tradičné remeslo so súčasným dizajnom, aby sme vám priniesli nábytok, ktorý obstojí skúškou času – vizuálne aj konštrukčne.</p>
+                    <ul class="about-highlights">
+                        <li><i class="fas fa-check-circle"></i> Materiály najvyššej kvality</li>
+                        <li><i class="fas fa-check-circle"></i> Individuálny prístup ku každému zákazníkovi</li>
+                        <li><i class="fas fa-check-circle"></i> Vlastná výrobná dielňa v Leviciach</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Dohodnúť konzultáciu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Čo ponúkame</p>
+                <h2 class="section-title">Naše Služby</h2>
+                <p class="section-subtitle">Od prvého návrhu až po finálnu montáž – staráme sa o každý detail vášho interiéru.</p>
+            </div>
+            <div class="services-grid">
+                <article class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <h3>Návrh Interiérov</h3>
+                    <p>Vypracujeme kompletný návrh vášho interiéru – od vizualizácie po technickú dokumentáciu. Každý priestor premieňame na harmonický celok.</p>
+                    <a href="#contact" class="service-link">Viac info <i class="fas fa-arrow-right"></i></a>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <h3>Zákazková Výroba</h3>
+                    <p>Vyrobíme nábytok presne podľa vašich predstáv a rozmerov. Kuchyne, skrine, regály, postele – všetko na mieru vo vlastnej dielni.</p>
+                    <a href="#contact" class="service-link">Viac info <i class="fas fa-arrow-right"></i></a>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-couch"></i>
+                    </div>
+                    <h3>Zariadenie Priestorov</h3>
+                    <p>Komplexné zariadenie bytu, domu či kancelárie. Poradíme s výberom nábytku, farieb a doplnkov pre dokonalý výsledok.</p>
+                    <a href="#contact" class="service-link">Viac info <i class="fas fa-arrow-right"></i></a>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Montáž &amp; Servis</h3>
+                    <p>Profesionálna montáž a popredajný servis. Staráme sa o vás aj po dokončení projektu – rýchlo a spoľahlivo.</p>
+                    <a href="#contact" class="service-link">Viac info <i class="fas fa-arrow-right"></i></a>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3>Masívne Drevo</h3>
+                    <p>Špecializujeme sa na nábytok z masívneho dreva. Prírodná krása a trvanlivosť, ktorá je investíciou na celý život.</p>
+                    <a href="#contact" class="service-link">Viac info <i class="fas fa-arrow-right"></i></a>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Povrchové Úpravy</h3>
+                    <p>Lakovanie, morenie, vosk alebo olej – vyberieme správnu povrchovú úpravu pre váš nábytok, ktorá ho ochráni a skrášli.</p>
+                    <a href="#contact" class="service-link">Viac info <i class="fas fa-arrow-right"></i></a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Naša práca</p>
+                <h2 class="section-title">Galéria Projektov</h2>
+                <p class="section-subtitle">Prezrite si ukážky našich realizovaných projektov a nechajte sa inšpirovať.</p>
+            </div>
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">Všetko</button>
+                <button class="filter-btn" data-filter="kitchen">Kuchyne</button>
+                <button class="filter-btn" data-filter="bedroom">Spálne</button>
+                <button class="filter-btn" data-filter="living">Obývacie izby</button>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="kitchen">
+                    <div class="gallery-placeholder kitchen-1">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Moderná kuchyňa</h4>
+                        <p>Levice, 2024</p>
+                    </div>
+                </div>
+                <div class="gallery-item featured" data-category="living">
+                    <div class="gallery-placeholder living-1">
+                        <i class="fas fa-couch"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Obývacia izba</h4>
+                        <p>Nitra, 2024</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="bedroom">
+                    <div class="gallery-placeholder bedroom-1">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Spálňa na mieru</h4>
+                        <p>Levice, 2023</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="kitchen">
+                    <div class="gallery-placeholder kitchen-2">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Rustikálna kuchyňa</h4>
+                        <p>Zlaté Moravce, 2023</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="living">
+                    <div class="gallery-placeholder living-2">
+                        <i class="fas fa-tv"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>TV stena</h4>
+                        <p>Levice, 2024</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="bedroom">
+                    <div class="gallery-placeholder bedroom-2">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Šatníková skriňa</h4>
+                        <p>Šahy, 2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="section why-us">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Naše výhody</p>
+                <h2 class="section-title">Prečo si vybrať nás?</h2>
+            </div>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-star"></i></div>
+                    <h3>Vysoká kvalita</h3>
+                    <p>Používame len prvotriedne materiály od overených dodávateľov. Každý výrobok prechádza dôkladnou kontrolou kvality.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-user-tie"></i></div>
+                    <h3>Individuálny prístup</h3>
+                    <p>Každý zákazník je pre nás unikátny. Vypočujeme vaše potreby a navrhneme riešenie presne na mieru vám.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-shipping-fast"></i></div>
+                    <h3>Rýchla dodávka</h3>
+                    <p>Dodržiavame dohodnuté termíny. Váš projekt dokončíme včas a bez zbytočných prieťahov.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-handshake"></i></div>
+                    <h3>Férové ceny</h3>
+                    <p>Transparentné ceny bez skrytých poplatkov. Dostanete jasnú cenovú ponuku pred začatím práce.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Záruka &amp; Servis</h3>
+                    <p>Poskytujeme záruky na naše výrobky a popredajný servis. Vaša spokojnosť je naša priorita.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-leaf"></i></div>
+                    <h3>Ekologický prístup</h3>
+                    <p>Dbáme na životné prostredie – používame certifikované drevo a ekologické povrchové úpravy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Referencie</p>
+                <h2 class="section-title">Čo hovoria naši zákazníci</h2>
+            </div>
+            <div class="testimonials-grid">
+                <blockquote class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"Kuchyňa presne podľa našich predstáv. Profesionálny prístup, krásne spracovanie a dodanie včas. Odporúčame každému!"</p>
+                    <footer>
+                        <strong>Mária K.</strong>
+                        <span>Levice</span>
+                    </footer>
+                </blockquote>
+                <blockquote class="testimonial-card featured-testimonial">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"Výnimočná kvalita a krásny dizajn. Šatníková skriňa do spálne je presne to, čo sme si predstavovali. Ďakujeme za skvelú prácu!"</p>
+                    <footer>
+                        <strong>Peter &amp; Jana N.</strong>
+                        <span>Šahy</span>
+                    </footer>
+                </blockquote>
+                <blockquote class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"Celý byt nám zariadili s veľkou starostlivosťou. Výsledok predčil naše očakávania. Určite sa budeme opäť obracať na Kredenc."</p>
+                    <footer>
+                        <strong>Tomáš H.</strong>
+                        <span>Nitra</span>
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p class="section-label">Spojte sa s nami</p>
+                    <h2 class="section-title">Kontaktujte nás</h2>
+                    <p class="contact-desc">Máte otázku alebo záujem o naše služby? Napíšte nám alebo zavolajte – radi sa vám ozveme čo najskôr.</p>
+                    <ul class="contact-details">
+                        <li>
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <strong>Adresa</strong>
+                                <span>Levice, Slovenská republika</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <strong>Telefón</strong>
+                                <span><a href="tel:+421900000000">+421 900 000 000</a></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <strong>Email</strong>
+                                <span><a href="mailto:info@kredenc-levice.sk">info@kredenc-levice.sk</a></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                            <div>
+                                <strong>Otváracie hodiny</strong>
+                                <span>Po–Pi: 8:00 – 17:00</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-form-wrap">
+                    <form class="contact-form" id="contact-form" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Meno a priezvisko *</label>
+                                <input type="text" id="name" name="name" placeholder="Ján Novák" required>
+                                <span class="form-error" id="name-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email" name="email" placeholder="jan@example.sk" required>
+                                <span class="form-error" id="email-error"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefón</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+421 900 000 000">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Predmet *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="" disabled selected>Vyberte tému...</option>
+                                <option value="interior">Návrh interiéru</option>
+                                <option value="production">Zákazková výroba</option>
+                                <option value="service">Servis &amp; montáž</option>
+                                <option value="other">Iné</option>
+                            </select>
+                            <span class="form-error" id="subject-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Správa *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Opíšte váš projekt alebo otázku..." required></textarea>
+                            <span class="form-error" id="message-error"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span class="btn-text">Odoslať správu</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                        <div class="form-success" id="form-success" hidden>
+                            <i class="fas fa-check-circle"></i>
+                            Vaša správa bola úspešne odoslaná. Ozveme sa vám čo najskôr!
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="#hero" class="nav-logo footer-logo">
+                            <span class="logo-icon">&#x2669;</span>
+                            Kredenc <span>Levice</span>
+                        </a>
+                        <p>Zákazková výroba nábytku a návrh interiérov v Leviciach. Kvalita, ktorá vydrží generácie.</p>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Rýchle odkazy</h4>
+                        <ul>
+                            <li><a href="#about">O nás</a></li>
+                            <li><a href="#services">Služby</a></li>
+                            <li><a href="#gallery">Galéria</a></li>
+                            <li><a href="#contact">Kontakt</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Služby</h4>
+                        <ul>
+                            <li><a href="#services">Návrh interiérov</a></li>
+                            <li><a href="#services">Zákazková výroba</a></li>
+                            <li><a href="#services">Masívne drevo</a></li>
+                            <li><a href="#services">Montáž &amp; servis</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h4>Kontakt</h4>
+                        <address>
+                            <p><i class="fas fa-map-marker-alt"></i> Levice, Slovenská republika</p>
+                            <p><i class="fas fa-phone"></i> <a href="tel:+421900000000">+421 900 000 000</a></p>
+                            <p><i class="fas fa-envelope"></i> <a href="mailto:info@kredenc-levice.sk">info@kredenc-levice.sk</a></p>
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Kredenc Levice. Všetky práva vyhradené.</p>
+                <p>Vyrobené s <i class="fas fa-heart"></i> v Leviciach</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
