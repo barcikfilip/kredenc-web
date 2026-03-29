@@ -668,10 +668,16 @@ address {
 
 .kitchen-1 { background: linear-gradient(135deg, #3d2b1f, #6b4c38); }
 .kitchen-2 { background: linear-gradient(135deg, #4a3222, #7a5a42); }
+.kitchen-3 { background: linear-gradient(135deg, #5a4535, #8a6a55); }
+.kitchen-4 { background: linear-gradient(135deg, #2e1f14, #5a3822); }
 .living-1  { background: linear-gradient(135deg, #1c2635, #2d3f58); }
 .living-2  { background: linear-gradient(135deg, #283040, #3a4a60); }
+.living-3  { background: linear-gradient(135deg, #203025, #354d3a); }
 .bedroom-1 { background: linear-gradient(135deg, #2a1f2e, #4a3555); }
 .bedroom-2 { background: linear-gradient(135deg, #1e2a22, #35503c); }
+.bedroom-3 { background: linear-gradient(135deg, #2a2035, #483a60); }
+.bathroom-1 { background: linear-gradient(135deg, #1a2e35, #2a4a55); }
+.office-1  { background: linear-gradient(135deg, #1e2030, #303548); }
 
 .gallery-overlay {
     position: absolute;
@@ -992,6 +998,122 @@ address {
     flex-shrink: 0;
 }
 
+/* ===== Partners Section ===== */
+.partners {
+    background: var(--color-cream);
+}
+
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.partner-card {
+    background: var(--color-warm-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: 32px 24px;
+    text-align: center;
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.partner-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.partner-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 72px;
+    margin-bottom: 16px;
+}
+
+.partner-name {
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--color-dark);
+    letter-spacing: 1px;
+}
+
+.partner-desc {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    line-height: 1.5;
+}
+
+/* ===== Support Section ===== */
+.support {
+    background: var(--color-dark);
+}
+
+.support .section-label {
+    color: var(--color-gold);
+}
+
+.support .section-title {
+    color: #fff;
+}
+
+.support .section-subtitle {
+    color: rgba(255,255,255,0.65);
+}
+
+.support-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.support-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: var(--radius-lg);
+    padding: 32px 24px;
+    text-align: center;
+    transition: transform var(--transition), background var(--transition);
+}
+
+.support-card:hover {
+    transform: translateY(-4px);
+    background: rgba(201,168,76,0.1);
+    border-color: var(--color-gold);
+}
+
+.support-icon {
+    width: 64px;
+    height: 64px;
+    background: rgba(201,168,76,0.15);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.support-icon i {
+    font-size: 1.5rem;
+    color: var(--color-gold);
+}
+
+.support-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+.support-card p {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.6;
+}
+
 /* ===== Footer ===== */
 .footer {
     background: var(--color-dark);
@@ -1195,12 +1317,18 @@ address {
         gap: 48px;
     }
 
+    .partners-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .support-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .footer-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
-@media (max-width: 768px) {
     :root {
         --navbar-height: 64px;
     }
@@ -1229,7 +1357,7 @@ address {
     }
 
     .nav-links.open {
-        max-height: 400px;
+        max-height: 520px;
         padding: 12px 0 20px;
     }
 
@@ -1271,6 +1399,12 @@ address {
 
     /* Why */
     .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Partners & Support */
+    .partners-grid,
+    .support-grid {
         grid-template-columns: 1fr;
     }
 
