@@ -189,6 +189,18 @@ address {
     text-decoration: none;
 }
 
+.nav-logo-img {
+    height: 44px;
+    width: auto;
+    display: block;
+}
+
+.footer-logo-img {
+    height: 52px;
+    width: auto;
+    display: block;
+}
+
 .nav-logo span {
     color: var(--color-gold);
 }
