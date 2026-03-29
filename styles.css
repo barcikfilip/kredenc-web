@@ -1,0 +1,38 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  background-color: #d4af8f;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+.navbar {
+  background-color: #2c2c2c;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main {
+  background-color: #ffffff;
+  padding: 20px;
+  color: #2c2c2c;
+}
+
+.footer {
+  background-color: #2c2c2c;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+}
