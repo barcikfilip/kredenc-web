@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 70" width="220" height="70">
+  <!-- Red rounded pill background -->
+  <rect x="0" y="0" width="220" height="70" rx="35" ry="35" fill="#C1272D"/>
+  <!-- KREDENC main text -->
+  <text x="110" y="36" font-family="Georgia, 'Times New Roman', serif" font-size="26" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="4">KREDENC</text>
+  <!-- KUCHYNE subtitle -->
+  <text x="110" y="56" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#FFD0D0" text-anchor="middle" letter-spacing="6">KUCHYNE</text>
+</svg>
