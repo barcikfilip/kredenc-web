@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="5 profesionálnych článkov pre malé firmy – moderný web, mobilná optimalizácia, AI chatbot, email automatizácia, mesačná správa webu.">
+    <title>Marketingové články pre malé firmy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* ===== CSS Custom Properties ===== */
+        :root {
+            --color-dark: #1c1410;
+            --color-dark-2: #2c2018;
+            --color-brown: #5c3d2e;
+            --color-gold: #c9a84c;
+            --color-gold-light: #e8c97a;
+            --color-cream: #f9f4ee;
+            --color-warm-white: #fefcf9;
+            --color-text: #2c2018;
+            --color-text-muted: #7a6a5a;
+            --color-border: #e8ddd0;
+            --font-heading: 'Playfair Display', Georgia, serif;
+            --font-body: 'Inter', system-ui, sans-serif;
+            --shadow-sm: 0 2px 8px rgba(28, 20, 16, 0.08);
+            --shadow-md: 0 8px 24px rgba(28, 20, 16, 0.12);
+            --radius-md: 12px;
+            --radius-lg: 20px;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--color-text);
+            background-color: var(--color-warm-white);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ===== Page Header ===== */
+        .page-header {
+            background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-brown) 100%);
+            color: #fff;
+            padding: 60px 24px 50px;
+            text-align: center;
+        }
+
+        .page-header .tagline {
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--color-gold-light);
+            margin-bottom: 14px;
+        }
+
+        .page-header h1 {
+            font-family: var(--font-heading);
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 16px;
+        }
+
+        .page-header h1 span {
+            color: var(--color-gold);
+        }
+
+        .page-header .subtitle {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.75);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* ===== Main Content ===== */
+        .articles-wrapper {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 56px 24px 80px;
+        }
+
+        /* ===== Article Card ===== */
+        .article-card {
+            background: #fff;
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-lg);
+            padding: 40px 44px;
+            margin-bottom: 36px;
+            box-shadow: var(--shadow-sm);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .article-card:hover {
+            box-shadow: var(--shadow-md);
+        }
+
+        .article-number {
+            display: inline-block;
+            background: var(--color-gold);
+            color: var(--color-dark);
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 0.75rem;
+            letter-spacing: 0.08em;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-bottom: 16px;
+        }
+
+        .article-card h2 {
+            font-family: var(--font-heading);
+            font-size: clamp(1.25rem, 2.5vw, 1.55rem);
+            font-weight: 700;
+            color: var(--color-dark);
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+
+        .article-description {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--color-gold);
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .article-divider {
+            width: 48px;
+            height: 2px;
+            background: var(--color-gold);
+            border: none;
+            margin-bottom: 20px;
+        }
+
+        .article-body {
+            font-size: 1rem;
+            color: var(--color-text);
+            line-height: 1.8;
+        }
+
+        .article-body p {
+            margin-bottom: 14px;
+        }
+
+        .article-body p:last-child {
+            margin-bottom: 0;
+        }
+
+        .article-body ul {
+            margin: 12px 0 16px 0;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .article-body ul li {
+            position: relative;
+            padding-left: 22px;
+            margin-bottom: 8px;
+            font-size: 0.97rem;
+        }
+
+        .article-body ul li::before {
+            content: '✦';
+            position: absolute;
+            left: 0;
+            color: var(--color-gold);
+            font-size: 0.65rem;
+            top: 6px;
+        }
+
+        /* ===== Copy-Hint Banner ===== */
+        .copy-hint {
+            background: var(--color-cream);
+            border-left: 4px solid var(--color-gold);
+            border-radius: var(--radius-md);
+            padding: 18px 24px;
+            margin-bottom: 44px;
+            font-size: 0.9rem;
+            color: var(--color-text-muted);
+        }
+
+        .copy-hint strong {
+            color: var(--color-brown);
+        }
+
+        /* ===== Footer ===== */
+        .page-footer {
+            text-align: center;
+            padding: 28px 24px;
+            border-top: 1px solid var(--color-border);
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 600px) {
+            .article-card {
+                padding: 28px 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <p class="tagline">Obsah pre marketing &amp; edukáciu</p>
+        <h1>Články pre <span>malé firmy</span></h1>
+        <p class="subtitle">5 profesionálnych príspevkov pripravených na použitie na webe, blogu, v emailoch alebo na sociálnych sieťach.</p>
+    </header>
+
+    <main class="articles-wrapper">
+
+        <!-- Copy hint -->
+        <div class="copy-hint">
+            <strong>Ako použiť tento súbor:</strong> Každý článok môžete skopírovať samostatne na váš web, blog, do emailovej kampane alebo na sociálne siete. Texty sú pripravené na priame použitie – stačí len doplniť vlastné kontaktné informácie alebo výzvu na akciu.
+        </div>
+
+        <!-- ===== ČLÁNOK 1 ===== -->
+        <article class="article-card">
+            <span class="article-number">Článok 01</span>
+            <h2>Výhody moderného webu pre malé firmy</h2>
+            <p class="article-description">Prečo každá malá firma potrebuje profesionálny web</p>
+            <hr class="article-divider">
+            <div class="article-body">
+                <p>V dnešnej digitálnej dobe je moderný web pre malú firmu rovnako dôležitý ako fyzická prevádzka. Zákazníci vás hľadajú online – a ak vás nenájdu, s veľkou pravdepodobnosťou nájdu vašu konkurenciu.</p>
+                <p>Profesionálny web vám pomáha:</p>
+                <ul>
+                    <li>Zvýšiť dôveryhodnosť a profesionálny obraz firmy</li>
+                    <li>Byť dostupný zákazníkom 24 hodín denne, 7 dní v týždni</li>
+                    <li>Prehľadne a atraktívne prezentovať produkty a služby</li>
+                    <li>Získavať nových zákazníkov cez vyhľadávače</li>
+                    <li>Ušetriť čas automatickým zodpovedaním bežných otázok</li>
+                </ul>
+                <p>Moderný web nie je len vizitka na internete – je to váš najlepší obchodný zástupca, ktorý pracuje non-stop. Investícia do kvalitného webu sa vráti niekoľkonásobne cez nových zákazníkov a vyšší záujem o vaše služby.</p>
+            </div>
+        </article>
+
+        <!-- ===== ČLÁNOK 2 ===== -->
+        <article class="article-card">
+            <span class="article-number">Článok 02</span>
+            <h2>Prečo je mobilná optimalizácia nevyhnutná</h2>
+            <p class="article-description">Väčšina vašich zákazníkov vás hľadá na mobile – ste pripravení?</p>
+            <hr class="article-divider">
+            <div class="article-body">
+                <p>Vedeli ste, že viac ako 60 % všetkých vyhľadávaní na internete prebieha cez mobilné zariadenia? Ak váš web nie je optimalizovaný pre mobily, prichádzate o väčšinu potenciálnych zákazníkov.</p>
+                <p>Mobilná optimalizácia znamená, že váš web:</p>
+                <ul>
+                    <li>Vyzerá skvele na smartfóne aj tablete</li>
+                    <li>Načíta sa rýchlo aj pri mobilnom internete</li>
+                    <li>Umožňuje jednoduché kliknutie na telefónne číslo alebo email</li>
+                    <li>Je prehľadný a ľahko ovládateľný na malej obrazovke</li>
+                </ul>
+                <p>Google navyše uprednostňuje mobilne optimalizované weby vo výsledkoch vyhľadávania. Weby bez mobilnej optimalizácie sa zobrazujú nižšie – a zákazníci ich jednoducho nenájdu. Moderný, mobilne optimalizovaný web nie je luxus, je to nevyhnutnosť pre každú firmu, ktorá chce rásť.</p>
+            </div>
+        </article>
+
+        <!-- ===== ČLÁNOK 3 ===== -->
+        <article class="article-card">
+            <span class="article-number">Článok 03</span>
+            <h2>Ako AI chatbot zvyšuje zákaznícku spokojnosť</h2>
+            <p class="article-description">Odpovedajte zákazníkom okamžite – aj keď spíte</p>
+            <hr class="article-divider">
+            <div class="article-body">
+                <p>AI chatbot je inteligentný nástroj, ktorý odpovedá na otázky vašich zákazníkov automaticky – 24 hodín denne, bez prestávky. Pre malé firmy je to revolúcia v každodennej komunikácii.</p>
+                <p>Čo AI chatbot dokáže pre vás:</p>
+                <ul>
+                    <li>Okamžite odpovedať na bežné otázky (otváracia doba, ceny, dostupnosť)</li>
+                    <li>Zbierať kontaktné údaje záujemcov aj mimo pracovnej doby</li>
+                    <li>Nasmerovať zákazníka na správnu službu alebo produkt</li>
+                    <li>Výrazne znížiť záťaž na telefón a email</li>
+                </ul>
+                <p>Zákazníci dnes očakávajú rýchle odpovede. Ak čakajú hodiny na reakciu, odchádzajú ku konkurencii. AI chatbot zaistí, že žiadny záujemca nezostane bez odpovede. Výsledok? Spokojnejší zákazníci, viac dopytov a menej strateného času na opakujúce sa otázky.</p>
+            </div>
+        </article>
+
+        <!-- ===== ČLÁNOK 4 ===== -->
+        <article class="article-card">
+            <span class="article-number">Článok 04</span>
+            <h2>Jednoduché tipy na automatizáciu emailov pre firmy</h2>
+            <p class="article-description">Ušetrite čas a zostaňte v kontakte so zákazníkmi – automaticky</p>
+            <hr class="article-divider">
+            <div class="article-body">
+                <p>Email marketing je stále jedným z najefektívnejších nástrojov na udržanie zákazníkov. A s automatizáciou môžete posielať správny email správnemu zákazníkovi – presne v pravý čas, bez manuálnej práce.</p>
+                <p>Tu je niekoľko jednoduchých spôsobov, ako začať:</p>
+                <ul>
+                    <li><strong>Uvítací email</strong> – automaticky odoslaný po registrácii alebo prvom kontakte</li>
+                    <li><strong>Pripomienky</strong> – upozornenie na nedokončenú objednávku alebo nadchádzajúcu návštevu</li>
+                    <li><strong>Narodeninové emaily</strong> – osobná správa s malou zľavou posilní lojalitu zákazníka</li>
+                    <li><strong>Opakovaný kontakt</strong> – emailová sekvencia pre zákazníkov, od ktorých ste dlho nepočuli</li>
+                </ul>
+                <p>Automatizácia emailov šetrí čas a zároveň buduje dlhodobý vzťah so zákazníkmi. Nemusíte na nič myslieť – systém pracuje za vás.</p>
+            </div>
+        </article>
+
+        <!-- ===== ČLÁNOK 5 ===== -->
+        <article class="article-card">
+            <span class="article-number">Článok 05</span>
+            <h2>Dôvody, prečo mať web s mesačnou správou je bezpečné a pohodlné</h2>
+            <p class="article-description">Web nestačí len vytvoriť – treba ho aj pravidelne udržiavať</p>
+            <hr class="article-divider">
+            <div class="article-body">
+                <p>Mať vlastný web je skvelý začiatok. No rovnako ako auto potrebuje pravidelný servis, aj web vyžaduje starostlivosť. Preto sa mesačná správa webu oplatí každej firme.</p>
+                <p>Čo zahŕňa profesionálna mesačná správa:</p>
+                <ul>
+                    <li>Pravidelné aktualizácie systémov a doplnkov pre maximálnu bezpečnosť</li>
+                    <li>Zálohovanie dát – v prípade výpadku viete obnoviť stránku kedykoľvek</li>
+                    <li>Monitorovanie dostupnosti a rýchlosti webu</li>
+                    <li>Drobné obsahové zmeny a aktualizácie podľa potreby</li>
+                    <li>Technická podpora, keď niečo nefunguje tak, ako má</li>
+                </ul>
+                <p>Web bez správy je zraniteľný voči hackerom, zastaráva a spomaľuje sa. Mesačná správa vám zaistí pokoj – váš web je vždy aktuálny, bezpečný a funguje spoľahlivo. Investícia do správy webu je investícia do bezpečnosti a dobrej reputácie vašej firmy.</p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer class="page-footer">
+        <p>Obsah pripravený pre marketingové účely &bull; Vhodný na web, blog, email marketing a sociálne siete</p>
+    </footer>
+
+</body>
+</html>
